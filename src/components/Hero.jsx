@@ -1,9 +1,10 @@
 import React, { useRef, useState } from "react";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import TypeWriterEffect from "react-typewriter-effect";
+import gbk from "../source/gbk.png";
+import gbk2 from "../source/gbk2.jpg";
+import gbk3 from "../source/gbk3.jpg";
 
-import { Typewriter } from "react-simple-typewriter";
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,50 +17,67 @@ import { Pagination, Autoplay } from "swiper";
 
 const Hero = () => {
   return (
-    <Swiper
-      slidesPerView={1}
-      spaceBetween={0}
-      loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        dynamicBullets: true,
-      }}
-      modules={[Autoplay, Pagination]}
-      className="mySwiper"
-    >
-      <SwiperSlide>
-        <div className="w-full h-[250px] md:h-[330px] lg:h-[430px] bg-red-600">
-          <div>
-            <div>
-              <div className="max-w-[800px] mt-[-10px] w-full h-[30rem] mx-auto text-center flex flex-col justify-center">
-                <p className="text-[#7AAEC5] text-lg uppercase font-bold md:text-3xl">smk bhumi husada</p>
-                <h1 className="text-2xl font-bold uppercase pt-3 md:text-4xl">we are software engineer</h1>
-                <div>
-                  <h3 className="text-1xl pt-3 capitalize text-slate-600 md:text-2xl">
-                    <span>
-                      <Typewriter words={["Eat", "Sleep", "Code", "Repeat!"]} loop={5} cursor cursorStyle="_" typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
-                    </span>
-                  </h3>
-                </div>
-              </div>
+    <div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <div className="w-full h-[250px] md:h-[330px] lg:h-[500px] bg-red-600 bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`}}>
+            <div className="content-center pt-[13%] text-white">
+                <h2 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl" >
+                  SMK BHUMI HUSADA
+                </h2>
+                <h1 className="text-3xl uppercase font-bold tracking-widest font-sans lg:text-5xl">
+                  software engineer
+                </h1>
+                <h5 className="text-base lg:text-xl lg:pt-1" >
+                  "Little Things Means A Lot"
+                </h5>
+                
             </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-[250px] md:h-[330px] lg:h-[500px] bg-slate-500 bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk2})`}}>
+            <h1 className="text-xl font-bold font-sans text-[#feffff] lg:text-3xl">it's fucking stress out</h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-[250px] md:h-[330px] lg:h-[500px] bg-yellow-300 bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk3})`}}>
+            <h1 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl">GAK TAU MAU NULIS APAAN</h1>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      <div>
+        <div className="py-10">
+          <h1 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl">Home Page</h1>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-full h-[250px] md:h-[330px] lg:h-[430px] bg-slate-500">
-          <h1>halo</h1>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-full h-[250px] md:h-[330px] lg:h-[430px] bg-yellow-300">
-          <h1>halo</h1>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+        <h1 className="flex">
+          hallo
+          <span className="text-red-900 pl-1 ">
+            <TypeWriterEffect
+              startDelay={1500}
+              cursorColor="#3F3D56"
+              multiText={["Hey there, This is a type writer animation package", "it consist of two types...", "Single text display and multi text display", "Fonts can be customized.", "The type speed can be customized as well"]}
+              multiTextDelay={1000}
+              typeSpeed={30}
+              multiTextLoop
+            />
+          </span>
+        </h1>
+      </div>
+    </div>
   );
 };
 
