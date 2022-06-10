@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TypeWriterEffect from "react-typewriter-effect";
 import gbk from "../source/gbk.png";
-import gbk2 from "../source/gbk2.jpg";
-import gbk3 from "../source/gbk3.jpg";
+import gbk2 from "../source/gbk2.svg";
+import gbk3 from "../source/gbk3.svg";
 
 
 // Import Swiper styles
@@ -33,7 +33,7 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-full h-[250px] md:h-[330px] lg:h-[500px] bg-red-600 bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`}}>
+          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-red-600 bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`}}>
             <div className="content-center pt-[13%] text-white">
                 <h2 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl" >
                   SMK BHUMI HUSADA
@@ -49,13 +49,13 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[250px] md:h-[330px] lg:h-[500px] bg-slate-500 bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk2})`}}>
-            <h1 className="text-xl font-bold font-sans text-[#feffff] lg:text-3xl">it's fucking stress out</h1>
+          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#fff3ce] bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk2})`}}>
+            <a href="">join</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[250px] md:h-[330px] lg:h-[500px] bg-yellow-300 bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk3})`}}>
-            <h1 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl">GAK TAU MAU NULIS APAAN</h1>
+          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-yellow-300 bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk3})`}}>
+            <h1 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl"></h1>
           </div>
         </SwiperSlide>
       </Swiper>

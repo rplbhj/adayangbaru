@@ -24,6 +24,8 @@ function App() {
     setNav(!Nav);
   };
 
+  
+
   return (
     <Router>
       <nav>
@@ -62,7 +64,7 @@ function App() {
             <div className={!Nav ? "fixed pt-5 top-[95px] right-9 w-[250px] h-[200px] bg-white rounded-lg shadow-2xl md:hidden ease-in-out duration-300 z-[100]" : "fixed right-[-100%] top-[95px] ease-in-out duration-300   "}>
               <ul>
                 <li>
-                  <Link to="/Home" className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
+                  <Link to="/" className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
                     Home
                   </Link>
                 </li>
@@ -119,7 +121,7 @@ function App() {
                 <div className="mb-5">
                     <h4 className="text-xl">Sosial Media</h4>
                     <ul className="text-gray-500">
-                      <li className="pb-3 pt-2"><a href="https://www.instagram.com/fdlharip/" target="_blank"  className="pb-3 pt-2 hover:text-slate-300 transition duration-300 ">Instagram</a></li>
+                      <li className="pb-3 pt-2"><a href="https://www.instagram.com/rplbhj/" target="_blank"  className="pb-3 pt-2 hover:text-slate-300 transition duration-300 ">Instagram</a></li>
                       <li className="pb-3"><a href="https://www.youtube.com/channel/UChGLYoQoqJ9ecsjQeB9oMeA" target="_blank"  className="pb-3 pt-2 hover:text-slate-300 transition duration-300 ">Youtube</a></li>
                       <li className="pb-3"><a href="https://www.facebook.com/akademifarmasi.husada" target="_blank"  className="pb-3 pt-2 hover:text-slate-300 transition duration-300 ">Facebook</a></li>
                       <li className="pb-3"><a href="https://www.tiktok.com/@fdlharip_" target="_blank"  className="pb-3 pt-2 hover:text-slate-300 transition duration-300 ">TikTok</a></li>
