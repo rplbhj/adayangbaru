@@ -5,7 +5,6 @@ import gbk from "../source/gbk.png";
 import gbk2 from "../source/gbk2.svg";
 import gbk3 from "../source/gbk3.svg";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -33,28 +32,21 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-red-600 bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`}}>
+          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px]  bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
             <div className="content-center pt-[13%] text-white">
-                <h2 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl" >
-                  SMK BHUMI HUSADA
-                </h2>
-                <h1 className="text-3xl uppercase font-bold tracking-widest font-sans lg:text-5xl">
-                  software engineer
-                </h1>
-                <h5 className="text-base lg:text-xl lg:pt-1" >
-                  "Little Things Means A Lot"
-                </h5>
-                
+              <h2 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl">SMK BHUMI HUSADA</h2>
+              <h1 className="text-3xl uppercase font-bold tracking-widest font-sans lg:text-5xl">software engineer</h1>
+              <h5 className="text-base lg:text-xl lg:pt-1">"Little Things Means A Lot"</h5>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#fff3ce] bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk2})`}}>
+          <div style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain" }} className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#FFF3CE] justify-center">
             <a href="">join</a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-yellow-300 bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk3})`}}>
+          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#EDFFD8] bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk3})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
             <h1 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl"></h1>
           </div>
         </SwiperSlide>
