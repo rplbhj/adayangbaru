@@ -32,7 +32,7 @@ const Hero = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px]  bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px]  bg-cover bg-no-repeat" style={{ backgroundImage: `url(${gbk})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="content-center pt-[13%] text-white">
               <h2 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl">SMK BHUMI HUSADA</h2>
               <h1 className="text-3xl uppercase font-bold tracking-widest font-sans lg:text-5xl">software engineer</h1>
@@ -41,14 +41,13 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain" }} className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#FFF3CE] justify-center">
-            <a href="">join</a>
-          </div>
+          <div style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center" }} className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#FFF3CE] justify-center"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#EDFFD8] bg-cover bg-no-repeat content-center pt-[13%] text-white" style={{ backgroundImage: `url(${gbk3})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-            <h1 className="text-xl font-bold font-sans text-[#bbe5f8] lg:text-3xl"></h1>
-          </div>
+          <div
+            className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#EDFFD8] bg-cover bg-no-repeat content-center pt-[13%] text-white"
+            style={{ backgroundImage: `url(${gbk3})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
+          ></div>
         </SwiperSlide>
       </Swiper>
       <div>
