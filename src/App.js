@@ -8,6 +8,7 @@ import About from "./components/About";
 import Galery from "./components/Galery";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
+import News1 from "./components/News1";
 
 function App() {
   const [bg, setBg] = useState(false);
@@ -28,29 +29,29 @@ function App() {
     <Router>
       <nav>
         <div className="w-full h-[85px] ">
-          <div className={`${bg ? "fixed w-full h-20 shadow-lg z-[100] bg-white/95 duration-300 " : "flex w-full bg-white  h-20 "} transition duration-300`}>
+          <div className={`${bg ? "fixed w-full h-20 shadow-lg z-[100] bg-white/95 duration-300 " : "flex w-full h-20 "} transition duration-300`}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
               <Link to="/">
                 <img src={Logo} alt="" width="100" height="100" />
               </Link>
               <ul className="hidden mr-[4rem]  md:flex">
                 <li>
-                  <Link to="/" className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
+                  <Link to="/" spy={true} smooth={true} offset={50} duration={500} className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
+                  <Link to="/About" spy={true} smooth={true} offset={50} duration={500} className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Galery" className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
+                  <Link to="/Galery" spy={true} smooth={true} offset={50} duration={500} className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
                     Galery
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Contact" className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
+                  <Link to="/Contact" spy={true} smooth={true} offset={50} duration={500} className="pl-4 uppercase hover:text-[#7AAEC5] duration-300">
                     Contact
                   </Link>
                 </li>
@@ -59,25 +60,25 @@ function App() {
                 {!Nav ? <GrFormClose size={40} /> : <GoThreeBars size={30} />}
               </div>
             </div>
-            <div className={!Nav ? "fixed pt-5 top-[95px] right-9 w-[250px] h-[200px] bg-white rounded-lg shadow-2xl md:hidden ease-in-out duration-300 z-[100]  " : "fixed right-[-100%] top-[95px] ease-in-out duration-300   "}>
+            <div className={!Nav ? "fixed pt-5 top-[95px] right-9 w-[250px] h-[200px] bg-white rounded-lg shadow-2xl md:hidden ease-in-out duration-300 z-[100] " : "fixed right-[-100%] top-[95px] ease-in-out duration-300   "}>
               <ul>
                 <li>
-                  <Link to="/" className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
+                  <Link to="/" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2 ">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
+                  <Link to="/About" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Galery" className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
+                  <Link to="/Galery" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2">
                     Galery
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Contact" className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
+                  <Link to="/Contact" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
                     Contact
                   </Link>
                 </li>
@@ -92,6 +93,7 @@ function App() {
         <Route path="/Galery" element={<Galery />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
+        <Route path="/News1" element={<News1 />} />
       </Routes>
       <footer>
         <div className="p-10 bg-gray-800 text-gray-200 ">
